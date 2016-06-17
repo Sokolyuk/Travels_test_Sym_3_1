@@ -1,0 +1,110 @@
+{% extends 'TravelsMainBundle::layout.html.twig' %}
+
+{% block title %}Welcome!{% endblock title %}
+
+{% block content %}
+<div class="content-container">
+	<div id="content_bg" class="content-bg">
+		<div class="flightsManager-content-wraper">
+			<div class="flightsManager-content-h">
+				<div class="flightsManager-content">
+					<div class="flightsManager-content-header">
+						<!-- <div class="flightsManager-service">
+							<span class="flightsManager-services-icon">ç</span>
+							Flüge
+						</div>
+						<div class="flightsManager-service">
+							<span class="flightsManager-services-icon">é</span>
+							Flug + Hotel
+						</div>
+						<div class="flightsManager-service">
+							<span class="flightsManager-services-icon">i</span>
+							Pauschalreisen 
+						</div>
+						<div class="flightsManager-service">
+							<span class="flightsManager-services-icon">V</span>
+							Mietwagen
+						</div>
+						<div class="flightsManager-service">
+							<span class="flightsManager-services-icon">è</span>
+							Hotels
+						</div> -->
+					</div>
+					<div class="flightsManager-row">
+						<div class="flightsManager-cell">
+							<div class="airportselector-input-wrapper">
+								<input id="departure_airportselector_input" class="airportselector-input" type="text" value="" placeholder="Abreiseort" autocomplete="off" spellcheck="false" tabindex="1">
+							</div>
+							<div class="airportselector-dialog">
+								<div class="airportselector">
+									<ul class="airportselector-items">
+										<li class="airportselector-item">
+											<div class="airportselector-item-icon">
+												<span>¿</span>
+											</div>
+											<div class="airportselector-item-text">
+												<span class="airportselector-item-text-match">Dus</span>seldorf&nbsp;-&nbsp;<span class="airportselector-item-text-italic">Alle Flughäfen</span>
+												<div class="airportselector-item-region">Deutschland</div>
+											</div>
+											<div class="airportselector-item-iata-wrapper">
+												<span class="airportselector-item-iata">DUS</span>
+											</div>
+										</li>
+										<li class="airportselector-subitems">
+											<ul>
+												<li class="airportselector-subitem-wrapper">
+													<div class="airportselector-subitem">
+														<div class="airportselector-item-icon">
+															<span> ( </span>
+														</div>
+														<div class="airportselector-item-text">Schiphol<span class="airportselector-item-text-rel">&nbsp;-&nbsp;Amsterdam</span>
+															<div class="airportselector-item-region">109 km bis Eindhoven</div>
+														</div>
+														<div class="airportselector-item-iata-wrapper">
+															<span class="airportselector-item-iata">AMS</span>
+														</div>
+													</div>
+												</li>
+												<li class="airportselector-subitem-wrapper">
+													<div class="airportselector-subitem">
+														<div class="airportselector-item-icon">
+															<span> ( </span>
+														</div>
+														<div class="airportselector-item-text">Schiphol<span class="airportselector-item-text-rel">&nbsp;-&nbsp;Amsterdam</span>
+															<div class="airportselector-item-region">109 km bis Eindhoven</div>
+														</div>
+														<div class="airportselector-item-iata-wrapper">
+															<span class="airportselector-item-iata">AMS</span>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+<!-- Next										<li class="airportselector-item">
+										</li> -->
+									</ul>
+									<div class="airportselector-bottom">
+										<button id="flightsManager_close_button" type="button" class="closeBtn">Schließen</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flightsManager-cell">
+							<div class="airportselector-input-wrapper">
+								<input style="" class="airportselector-input" type="text" value="" placeholder="Nach" autocomplete="off" spellcheck="false" tabindex="2" disabled>
+							</div>
+						</div>
+					</div>
+					<div class="flightsManager-content-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
+
+
+{% block javascripts %}
+<script src="{{ asset('bundles/travelsmain/js/lib/require.js') }}" async="" data-main="{{ asset('bundles/travelsmain/js/init') }}"></script>
+{% endblock javascripts %}

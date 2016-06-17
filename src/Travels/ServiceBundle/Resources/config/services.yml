@@ -1,0 +1,6 @@
+services:
+    xhrequester:
+        class: Travels\ServiceBundle\Classes\XHRequesterImpl
+#        arguments: ['']
+#        calls:
+#            - [setUrl, ['setUrl']]

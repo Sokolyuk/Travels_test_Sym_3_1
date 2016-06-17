@@ -1,0 +1,9 @@
+travels_service:
+    resource: "@TravelsServiceBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+travels_main:
+    resource: "@TravelsMainBundle/Controller/"
+    type:     annotation
+    prefix:   /

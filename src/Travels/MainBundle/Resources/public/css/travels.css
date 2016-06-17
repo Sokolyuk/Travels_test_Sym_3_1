@@ -1,0 +1,282 @@
+body {
+    background:		#000;
+    height:			100%;
+    width:			100%;
+    position:		absolute;
+    margin:			0px;
+	font-family:	"Ubuntu",Arial,Helvetica,sans-serif;
+}
+
+ol, ul {
+	list-style:		none;
+}
+
+@font-face {
+	font-family:	"theme-icons";
+	src:			url("../fonts/opodo.ttf") format("truetype");
+	font-weight:	normal;
+	font-style:		normal;
+}
+
+header {
+	height:			136px;
+	top:			0;
+	font-size:		14px;
+	background:		linear-gradient(to bottom, rgba(30,87,153,1), rgba(30,87,153,0));
+}
+
+footer {
+	height:			70px;
+	bottom:			0;
+	font-size:		11px;
+	background:		linear-gradient(to top, rgba(30,87,153,1), rgba(30,87,153,0));
+}
+
+header,footer {
+	width:			100%;
+    color:			rgba(255,255,255,0.8);
+	position:		absolute;
+}
+
+.content-container {
+    height:			100%;
+    width:			100%;
+	background:		mediumaquamarine;
+}
+
+.content-bg {
+    height:			100%;
+    width:			100%;
+	background-image:	url("../images/bgimg1.jpg");
+	background-repeat:	no-repeat;
+	background-size:	cover;
+}
+
+.flightsManager-content-wraper {
+	margin:			0 auto;
+	padding-top:	200px;
+	width:			940px;
+    min-height:		420px;
+}
+
+.flightsManager-content {
+	width:			740px;
+	border-radius:	4px;
+	background:		rgba(0,0,0,0.6);
+	box-shadow:		0 4px 8px rgba(0,0,0,0.3);
+}
+
+.flightsManager-content-header {
+	width:			100%;
+	height:			42px;
+	font-size:		12px;
+}
+
+.flightsManager-content-footer {
+	width:			100%;
+	height:			62px;
+}
+
+.flightsManager-services-icon {
+	font-family:	"theme-icons";
+	font-size:		21px;
+	vertical-align:	middle;
+}
+
+.flightsManager-row {
+	display:		table;
+	table-layout:	fixed;
+	box-sizing:		border-box;
+	padding:		0 10px;
+	width:			100%;
+}
+
+.flightsManager-cell {
+	display:		table-cell;
+	vertical-align:	top;
+	position:		relative;
+	padding:		6px 10px;
+}
+
+.airportselector-input-wrapper {
+
+}
+
+.airportselector-input {
+	border-radius:	4px;
+	box-shadow:		inset 0 0 4px rgba(0,0,0,0.2);
+	height:			42px;
+	width:			100%;
+	border:			1px solid #ccc;
+	color:			#333;
+	font-size:		14px;
+	box-sizing:		border-box;
+	padding:		10px;
+}
+
+.airportselector-input:disabled {
+	background:		rgba(245,245,245,0.2);
+	border:			1px solid #999;
+}
+
+.airportselector-input:focus {
+	padding:		9px;
+}
+.airportselector-input:focus {
+	border:			2px solid #f60;
+}
+
+.flightsManager-service {
+	float:			left;
+	width:			80px;
+	height:			20px;
+	vertical-align:	bottom;
+    text-align:		center;
+    white-space:	nowrap;
+	padding:		12px 20px 10px 20px;
+	cursor:			pointer;
+}
+
+.flightsManager-service:hover {
+	color:			#fff;
+}
+
+.flightsManager-service {
+	color:			rgba(255,255,255,0.6);
+}
+
+.airportselector-dialog {
+	display:		block;
+	border:			0;
+	background-color:	#fff;
+	border-radius:	4px;
+	box-shadow:		0 0 6px rgba(0,0,0,0.4);
+	overflow:		hidden;
+	position:		absolute;
+	z-index:		2;
+	margin-top:		6px;
+	min-width:		100%;
+}
+
+.airportselector {
+	
+}
+
+.airportselector-items {
+	margin:			0;
+	padding:		0;
+}
+
+.airportselector-items li:first-child {
+	border:			0px;
+}
+
+.airportselector-item {
+	background-color:	#FFE7D7;
+	display:		table;
+	height:			44px;
+	width:			100%;
+	font-size:		14px;
+	border-top:		1px solid #ccc;
+	color:			#333;
+}
+
+.airportselector-item-icon {
+	display:		table-cell;
+	vertical-align:	middle;
+	text-align:		center;
+	padding-left:	12px;
+	width:			20px;
+	font-family:	"theme-icons";
+	font-size:		24px;
+	color:			#ccc;
+}
+
+.airportselector-item-text {
+	display:		table-cell;
+	vertical-align:	middle;
+	white-space:	nowrap;
+	padding:		0 8px;
+	width:			100%;
+}
+
+.airportselector-item-text-italic {
+	font-style:		italic;
+}
+
+.airportselector-item-text-rel {
+	
+}
+
+.airportselector-item-text-match {
+	font-weight:	500;
+}
+
+.airportselector-item-region {
+	color:			#999;
+}
+
+.airportselector-item-iata-wrapper {
+	display:		table-cell;
+	vertical-align:	middle;
+	text-align:		center;
+	width:			40px;
+	padding:		0 10px;
+}
+
+.airportselector-item-iata {
+	display:		inline-block;
+	width:			50px;
+	padding:		5px 8px;
+	text-transform:	uppercase;
+	box-sizing:		border-box;
+	border:			1px solid #ccc;
+	border-radius:	4px;
+	font-size:		12px;
+	font-weight:	400;
+}
+
+.airportselector-subitems {
+	border-top:		1px solid #ccc;
+}
+
+.airportselector-subitems li:first-child>.airportselector-subitem{
+	border:			0px;
+}
+
+.airportselector-subitem-wrapper {
+	margin-left:	28px;
+	margin:			0;
+	padding:		0;
+	height:			44px;
+	width:			100%;
+}
+
+.airportselector-subitem {
+	font-size:		14px;
+	border-top:		1px solid #ccc;
+	color:			#333;
+	display:		table;
+	height:			44px;
+}
+
+.airportselector-bottom {
+	border-top:		1px solid #ccc;
+	background:		#F2F2F2;
+	text-align:		right;
+	padding:		6px 10px;
+}
+
+.closeBtn {
+	cursor:			pointer;
+	margin:			0;
+	border-radius:	4px;
+	height:			34px;
+	padding:		0 20px;
+	color:			#f60;
+	font-weight:	500;
+	font-size:		14px;
+	border:			1px solid #ccc;
+	background:		linear-gradient(#fff, #F2F2F2);
+}
+

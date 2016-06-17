@@ -1,0 +1,27 @@
+{% extends 'TravelsMainBundle::base.html.twig' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('bundles/travelsmain/css/travels.css') }}" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300%7CUbuntu:400%7CUbuntu:500%7CUbuntu:700"/>
+{% endblock stylesheets %}
+
+{% block layout %}
+
+    {% block header %}
+		{% include 'TravelsMainBundle::layout/header.html.twig' %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+        {% include 'TravelsMainBundle::layout/footer.html.twig' %}
+    {% endblock footer %}
+
+{% endblock layout %}
+
+{% block javascripts %}
+{% endblock javascripts %}
