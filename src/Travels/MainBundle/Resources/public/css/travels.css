@@ -49,10 +49,10 @@ header,footer {
     height:			100%;
     width:			100%;
 	position:		absolute;
-	background:		rgba(0,0,0,0.0);
-	-webkit-transition:	background-color 2s;
-	transition:		background-color 2s;
-}
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    transition:background-color 1s;}
 
 .content-bg-img-container {
     height:			100%;

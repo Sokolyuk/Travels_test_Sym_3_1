@@ -5,46 +5,56 @@ define(['jquery'], function($){
 		var module = function() {
 			self = this;
 		};
-		var keyupTimer = undefined;
-		var id = "departure_airportselector_input";
-		var inpElem = undefined;
+		var m_keyupTimer = undefined;
+		var m_inpElem = undefined;
+		var m_items = undefined;
+		var m_dlg = undefined; 
 
 		module.prototype =
 		{
 			constructor: module,
 			init: function() {
 
-				inpElem = $("#" + id);
-				if (!inpElem.length) {
-					console.error('Element by id=' + id + ' not found');
-					inpElem = undefined;
-					return;
-				}
-/*				inpElem.focusout(function(){
-					$(".content-bg-pall").animate({backgroundColor:'rgba(0,0,0,0.0)'}, 2000);
+				m_inpElem = $("#departure_airportselector_input");
+				m_dlg = $('#airportselector_dialog');
+				m_items = $("#airportselector_items");
+
+				m_inpElem.focusout(function(){
+					$(".content-bg-pall").css({ 'background-color': 'rgba(0, 0, 0, 0.0)' });
+					self.hide();
 				});
-				inpElem.focusin(function(){
-					$(".content-bg-pall").animate({backgroundColor:'rgba(0,0,0,0.3)'}, 2000);
-					console.log('in');
+				m_inpElem.focusin(function(){
+					$(".content-bg-pall").css({ 'background-color': 'rgba(0, 0, 0, 0.3)' });
+					var dt = m_inpElem.data("data");
+					if (typeof dt !== 'undefined') {
+						self.xhr(dt.iata);
+					} else {
+						if (m_inpElem.val().length > 2) self.show();
+					}
 				});
-				*/
-				inpElem.keyup(function(){
-					var s = inpElem.val();
+				
+				m_inpElem.keyup(function(e){
+					if (typeof m_keyupTimer !== 'undefined' ) {
+						clearInterval(m_keyupTimer);
+					}
+
+					var s = m_inpElem.val();
 					if (typeof s !== 'string' || s.length < 3) {
-						self.hide();
-						self.clearSelectedData();
+						self.hideAndClearData();
 						return;
 					}
 
-					if (typeof self.keyupTimer !== 'undefined' ) {
-						clearInterval(self.keyupTimer);
+					if (e.which === 13) {
+						m_items.children("li:first-child").trigger("click");
+					} else if (e.which === 27) {
+						self.hide();
+					} else {
+						m_keyupTimer = setInterval(function(){
+							clearInterval(m_keyupTimer);
+							m_keyupTimer = undefined;
+							self.xhr(s);
+						}, 600);
 					}
-					
-					self.keyupTimer = setInterval(function(){
-						clearInterval(self.keyupTimer);
-						self.keyupTimer = undefined;
-						self.xhr(s);
-					}, 600);
 				});
 			},
 			xhr: function(s) {
@@ -68,17 +78,23 @@ define(['jquery'], function($){
 			hide: function() {
 				$("#airportselector_dialog").find(".closeBtn").trigger( "click" );
 			},
+			hideAndClearData: function() {
+				self.hide();
+				self.clearSelectedData();
+			},
+			show: function() {
+				m_dlg.css('opacity', '0.0');
+				m_dlg.fadeTo('fast', 1.0);
+			},
 			clearSelectedData: function() {
-				inpElem.data("data", undefined);
+				m_inpElem.data("data", undefined);
 			},
 			renderData: function(data, s) {
 				try{
 					var s_reg = "^" + s;
-					var dlg = $('#airportselector_dialog');
-					dlg.css('opacity', '0.0');
+					m_dlg.css('opacity', '0.0');
 
-					var items = $("#airportselector_items");
-					items.empty();
+					m_items.empty();
 
 					var splitSelected = function(ss, city){
 						var city_m = city.match(new RegExp(ss, 'i'));
@@ -91,12 +107,16 @@ define(['jquery'], function($){
 					
 					var init_events = function(elm) {
 						$(elm).click(function() {
-							inpElem.data("data", $(this).data().data); // <<< HERE set selected data to input (<input id="departure_airportselector_input"..)
-							inpElem.val($(this).data().data.title);
+							m_inpElem.data("data", $(this).data().data); // <<< HERE set selected data to input (<input id="departure_airportselector_input"..)
+							m_inpElem.val($(this).data().data.title);
 							self.hide();
 							//Result of task:
-							console.log("Result: " + inpElem.data("data").iata + " / " + inpElem.data("data").title + " / " + inpElem.data("data").type);
+							console.log("Result: " + m_inpElem.data("data").iata + " / " + m_inpElem.data("data").title + " / " + m_inpElem.data("data").type);
 						});
+					}
+
+					if (typeof data === "string") {
+						data = jQuery.parseJSON(data);
 					}
 
 					$.each(data, function(index, item) {
@@ -117,7 +137,7 @@ define(['jquery'], function($){
 								'	</div>' +
 								'</li>')
 
-						items.append(newEl);
+						m_items.append(newEl);
 						init_events(newEl);
 						newEl.data("data", {type: item.type, title: item.city + html_title, iata: item.iata});
 
@@ -142,12 +162,12 @@ define(['jquery'], function($){
 								'		</li>' +
 								'	</ul>' +
 								'</li>');
-							items.append(newSubEl);
+							m_items.append(newSubEl);
 							init_events(newSubEl);
 							newSubEl.data("data", {type: subitem.type, title: subitem.name, iata: subitem.iata});
 						});
 					});
-					dlg.fadeTo('fast', 1.0);
+					m_dlg.fadeTo('fast', 1.0);
 				}catch(e){
 					console.error(e);
 					self.renderError('Service temporarily unavailable');
@@ -156,16 +176,11 @@ define(['jquery'], function($){
 			renderError: function(errorMessage) {
 				console.error(errorMessage);
 				self.clearSelectedData();
-				var dlg = $('#airportselector_dialog');
-				dlg.css('opacity', '0.0');
-				var items = $("#airportselector_items");
-				items.empty();
-
+				m_dlg.css('opacity', '0.0');
+				m_items.empty();
 				var newEl = $('<div class="airportselector-error"><span>' + errorMessage + '</span></div>');
-
-				items.append(newEl);
-
-				dlg.fadeTo('fast', 1.0);
+				m_items.append(newEl);
+				m_dlg.fadeTo('fast', 1.0);
 			}
 		};
 
