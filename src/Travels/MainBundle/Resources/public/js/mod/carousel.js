@@ -1,5 +1,5 @@
 define(['jquery'], function($){
-
+	"use strict";
 	var Carousel = (function() {
 		var module = function() {};
 
@@ -7,7 +7,7 @@ define(['jquery'], function($){
 		{
 			constructor: module,
 			init: function() {
-				alert('Carousel.init();');
+				//alert('Carousel.init();');
 			}
 		};
 

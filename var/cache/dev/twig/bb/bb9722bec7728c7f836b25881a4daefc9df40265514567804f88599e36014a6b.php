@@ -1,6 +1,6 @@
 <?php
 
-/* TravelsMainBundle::layout/footer.html.twig */
+/* TravelsMainBundle:layout:footer.html.twig */
 class __TwigTemplate_d91286fa25a6208dacfba31b451b2b8a351c36df7605466b733e95e0ba62c66e extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_d91286fa25a6208dacfba31b451b2b8a351c36df7605466b733e95e0ba6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fa358b0dc0dcce6a0595285094197112726aec7d4d0e741d4fae3229b870cd4d = $this->env->getExtension("native_profiler");
-        $__internal_fa358b0dc0dcce6a0595285094197112726aec7d4d0e741d4fae3229b870cd4d->enter($__internal_fa358b0dc0dcce6a0595285094197112726aec7d4d0e741d4fae3229b870cd4d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TravelsMainBundle::layout/footer.html.twig"));
+        $__internal_b29e054fa7872c06a1bedcee2ecdad18a27b56b13e40ba5a002a8583a4de2425 = $this->env->getExtension("native_profiler");
+        $__internal_b29e054fa7872c06a1bedcee2ecdad18a27b56b13e40ba5a002a8583a4de2425->enter($__internal_b29e054fa7872c06a1bedcee2ecdad18a27b56b13e40ba5a002a8583a4de2425_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TravelsMainBundle:layout:footer.html.twig"));
 
         // line 1
         echo "<footer class=\"footer\">
@@ -26,13 +26,13 @@ class __TwigTemplate_d91286fa25a6208dacfba31b451b2b8a351c36df7605466b733e95e0ba6
 </footer><!-- .footer -->
 ";
         
-        $__internal_fa358b0dc0dcce6a0595285094197112726aec7d4d0e741d4fae3229b870cd4d->leave($__internal_fa358b0dc0dcce6a0595285094197112726aec7d4d0e741d4fae3229b870cd4d_prof);
+        $__internal_b29e054fa7872c06a1bedcee2ecdad18a27b56b13e40ba5a002a8583a4de2425->leave($__internal_b29e054fa7872c06a1bedcee2ecdad18a27b56b13e40ba5a002a8583a4de2425_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "TravelsMainBundle::layout/footer.html.twig";
+        return "TravelsMainBundle:layout:footer.html.twig";
     }
 
     public function getDebugInfo()

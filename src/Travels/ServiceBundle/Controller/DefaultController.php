@@ -15,7 +15,7 @@ class DefaultController extends Controller
 	
 	protected function _err_response_json($code, $message)
 	{
-		return new Response(empty($message) ? '' : json_encode(array('message' => $message)), $code, array('Content-Type' => 'application/json'));
+		return new Response(empty($message) ? '' : json_encode(array('errormessage' => $message)), $code, array('Content-Type' => 'application/json'));
 	}
 
 	protected function nameToURL($name)
@@ -30,11 +30,9 @@ class DefaultController extends Controller
     public function listAction($name)
     {
 		try{
-			if (preg_match("/[^a-z]/i", $name)) {
+			if (preg_match("/[^a-zöäüß]/i", $name)) {
 				return $this->_err_response_json(400, 'It must contain letters');
 			}
-
-			//die(print_r(class_implements($this->get('xhrequester'))));
 
 			$xhrequester = $this->get('xhrequester');
 			if (!$xhrequester instanceof XHRequesterInterface) {

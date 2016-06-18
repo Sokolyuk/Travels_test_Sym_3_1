@@ -14,8 +14,6 @@ class __TwigTemplate_db336424e944481da51b3ee5d8289d8d59d2a040843ccaee7fd8aab27b5
             'metatags' => array($this, 'block_metatags'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'layout' => array($this, 'block_layout'),
-            'appData' => array($this, 'block_appData'),
-            'jsTemplates' => array($this, 'block_jsTemplates'),
             'javascripts' => array($this, 'block_javascripts'),
         );
     }
@@ -35,31 +33,24 @@ class __TwigTemplate_db336424e944481da51b3ee5d8289d8d59d2a040843ccaee7fd8aab27b5
         // line 6
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/images/favicon.ico"), "html", null, true);
         echo "\" />
-
         ";
-        // line 8
+        // line 7
         $this->displayBlock('metatags', $context, $blocks);
-        // line 9
+        // line 8
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 10
+        // line 9
         echo "    </head>
     <body>
         ";
-        // line 12
+        // line 11
         $this->displayBlock('layout', $context, $blocks);
-        // line 13
+        // line 12
         echo "    </body>
     ";
-        // line 14
-        $this->displayBlock('appData', $context, $blocks);
-        // line 15
-        echo "    ";
-        $this->displayBlock('jsTemplates', $context, $blocks);
-        // line 16
-        echo "    ";
+        // line 13
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 17
+        // line 14
         echo "</html>
 ";
     }
@@ -69,32 +60,22 @@ class __TwigTemplate_db336424e944481da51b3ee5d8289d8d59d2a040843ccaee7fd8aab27b5
     {
     }
 
-    // line 8
+    // line 7
     public function block_metatags($context, array $blocks = array())
     {
     }
 
-    // line 9
+    // line 8
     public function block_stylesheets($context, array $blocks = array())
     {
     }
 
-    // line 12
+    // line 11
     public function block_layout($context, array $blocks = array())
     {
     }
 
-    // line 14
-    public function block_appData($context, array $blocks = array())
-    {
-    }
-
-    // line 15
-    public function block_jsTemplates($context, array $blocks = array())
-    {
-    }
-
-    // line 16
+    // line 13
     public function block_javascripts($context, array $blocks = array())
     {
         echo " ";
@@ -112,7 +93,7 @@ class __TwigTemplate_db336424e944481da51b3ee5d8289d8d59d2a040843ccaee7fd8aab27b5
 
     public function getDebugInfo()
     {
-        return array (  98 => 16,  93 => 15,  88 => 14,  83 => 12,  78 => 9,  73 => 8,  68 => 5,  63 => 17,  60 => 16,  57 => 15,  55 => 14,  52 => 13,  50 => 12,  46 => 10,  43 => 9,  41 => 8,  36 => 6,  32 => 5,  26 => 1,);
+        return array (  79 => 13,  74 => 11,  69 => 8,  64 => 7,  59 => 5,  54 => 14,  52 => 13,  49 => 12,  47 => 11,  43 => 9,  40 => 8,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -121,15 +102,12 @@ class __TwigTemplate_db336424e944481da51b3ee5d8289d8d59d2a040843ccaee7fd8aab27b5
 /*         <meta charset="utf-8">*/
 /*         <title>{% block title %}{% endblock title %}</title>*/
 /*         <link rel="shortcut icon" href="{{ asset('bundles/travelsmain/images/favicon.ico') }}" />*/
-/* */
 /*         {% block metatags %}{% endblock metatags %}*/
 /*         {% block stylesheets %}{% endblock stylesheets %}*/
 /*     </head>*/
 /*     <body>*/
 /*         {% block layout %}{% endblock layout %}*/
 /*     </body>*/
-/*     {% block appData %}{% endblock appData %}*/
-/*     {% block jsTemplates %}{% endblock jsTemplates %}*/
 /*     {% block javascripts %} {% endblock javascripts %}*/
 /* </html>*/
 /* */

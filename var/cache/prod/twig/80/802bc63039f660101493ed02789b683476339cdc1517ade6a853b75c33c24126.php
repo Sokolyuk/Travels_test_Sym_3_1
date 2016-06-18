@@ -10,6 +10,7 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
         // line 1
         $this->parent = $this->loadTemplate("TravelsMainBundle::layout.html.twig", "TravelsMainBundle::index.html.twig", 1);
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
             'content' => array($this, 'block_content'),
             'javascripts' => array($this, 'block_javascripts'),
         );
@@ -26,55 +27,49 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
     }
 
     // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Welcome!";
+    }
+
+    // line 5
     public function block_content($context, array $blocks = array())
     {
-        // line 4
+        // line 6
         echo "<div class=\"content-container\">
-\t<div class=\"content-bg\">
+\t<div id=\"content_bg_img_container\" class=\"content-bg-img-container\">
+\t\t<div id=\"content_bg_img_1\" class=\"content-bg-img\"></div>
+\t\t<div id=\"content_bg_img_2\" class=\"content-bg-img\"></div>
+\t\t<div id=\"content_bg_img_3\" class=\"content-bg-img\"></div>
+\t</div>
+\t<div id=\"content_bg_pall\" class=\"content-bg-pall\">
 \t\t<div class=\"flightsManager-content-wraper\">
 \t\t\t<div class=\"flightsManager-content-h\">
 \t\t\t\t<div class=\"flightsManager-content\">
 \t\t\t\t\t<div class=\"flightsManager-content-header\">
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">ç</span>
-\t\t\t\t\t\t\tFlüge
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">é</span>
-\t\t\t\t\t\t\tFlug + Hotel
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">i</span>
-\t\t\t\t\t\t\tPauschalreisen 
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">V</span>
-\t\t\t\t\t\t\tMietwagen
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">è</span>
-\t\t\t\t\t\t\tHotels
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
+";
+        // line 39
+        echo "\t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"flightsManager-row\">
 \t\t\t\t\t\t<div class=\"flightsManager-cell\">
 \t\t\t\t\t\t\t<div class=\"airportselector-input-wrapper\">
 \t\t\t\t\t\t\t\t<input id=\"departure_airportselector_input\" class=\"airportselector-input\" type=\"text\" value=\"\" placeholder=\"Abreiseort\" autocomplete=\"off\" spellcheck=\"false\" tabindex=\"1\">
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"departure-airportselector-dialog\">
-\t\t\t\t\t\t\t\t123
-\t\t\t\t\t\t\t\t</br>
-\t\t\t\t\t\t\t\t123
-\t\t\t\t\t\t\t\t</br>
-\t\t\t\t\t\t\t\t123
-\t\t\t\t\t\t\t\t</br>
-\t\t\t\t\t\t\t\t123
-\t\t\t\t\t\t\t\t</br>
+\t\t\t\t\t\t\t<div id=\"airportselector_dialog\" class=\"airportselector-dialog\">
+\t\t\t\t\t\t\t\t<div class=\"airportselector\">
+\t\t\t\t\t\t\t\t\t<ul id=\"airportselector_items\" class=\"airportselector-items\">
+";
+        // line 92
+        echo "\t\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t\t<div class=\"airportselector-bottom\">
+\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"closeBtn\">Schließen</button>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"flightsManager-cell\">
 \t\t\t\t\t\t\t<div class=\"airportselector-input-wrapper\">
-\t\t\t\t\t\t\t\t<input class=\"airportselector-input\" type=\"text\" value=\"\" placeholder=\"Nach\" autocomplete=\"off\" spellcheck=\"false\" tabindex=\"2\">
+\t\t\t\t\t\t\t\t<input style=\"\" class=\"airportselector-input\" type=\"text\" value=\"\" placeholder=\"Nach\" autocomplete=\"off\" spellcheck=\"false\" tabindex=\"2\" disabled>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -88,22 +83,15 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
 ";
     }
 
-    // line 63
+    // line 115
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 64
-        echo "
-<script>
-\tfunction aa_onReady()
-\t{
-\t    var aaElem = \$('#mycorousel');
-        aaElem.Aa({
-\t\t\turlimgs: ['123']
-\t\t});
-\t}
-\t\$(document).ready( aa_onReady );
-</script>
-
+        // line 116
+        echo "<script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/lib/require.js"), "html", null, true);
+        echo "\" async=\"\" data-main=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/init"), "html", null, true);
+        echo "\"></script>
 ";
     }
 
@@ -119,18 +107,26 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
 
     public function getDebugInfo()
     {
-        return array (  95 => 64,  92 => 63,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  90 => 116,  87 => 115,  63 => 92,  52 => 39,  39 => 6,  36 => 5,  30 => 3,  11 => 1,);
     }
 }
 /* {% extends 'TravelsMainBundle::layout.html.twig' %}*/
 /* */
+/* {% block title %}Welcome!{% endblock title %}*/
+/* */
 /* {% block content %}*/
 /* <div class="content-container">*/
-/* 	<div class="content-bg">*/
+/* 	<div id="content_bg_img_container" class="content-bg-img-container">*/
+/* 		<div id="content_bg_img_1" class="content-bg-img"></div>*/
+/* 		<div id="content_bg_img_2" class="content-bg-img"></div>*/
+/* 		<div id="content_bg_img_3" class="content-bg-img"></div>*/
+/* 	</div>*/
+/* 	<div id="content_bg_pall" class="content-bg-pall">*/
 /* 		<div class="flightsManager-content-wraper">*/
 /* 			<div class="flightsManager-content-h">*/
 /* 				<div class="flightsManager-content">*/
 /* 					<div class="flightsManager-content-header">*/
+/* {#*/
 /* 						<div class="flightsManager-service">*/
 /* 							<span class="flightsManager-services-icon">ç</span>*/
 /* 							Flüge*/
@@ -151,26 +147,70 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
 /* 							<span class="flightsManager-services-icon">è</span>*/
 /* 							Hotels*/
 /* 						</div>*/
+/* #}*/
 /* 					</div>*/
 /* 					<div class="flightsManager-row">*/
 /* 						<div class="flightsManager-cell">*/
 /* 							<div class="airportselector-input-wrapper">*/
 /* 								<input id="departure_airportselector_input" class="airportselector-input" type="text" value="" placeholder="Abreiseort" autocomplete="off" spellcheck="false" tabindex="1">*/
 /* 							</div>*/
-/* 							<div class="departure-airportselector-dialog">*/
-/* 								123*/
-/* 								</br>*/
-/* 								123*/
-/* 								</br>*/
-/* 								123*/
-/* 								</br>*/
-/* 								123*/
-/* 								</br>*/
+/* 							<div id="airportselector_dialog" class="airportselector-dialog">*/
+/* 								<div class="airportselector">*/
+/* 									<ul id="airportselector_items" class="airportselector-items">*/
+/* {#*/
+/* 										<li class="airportselector-item">*/
+/* 											<div class="airportselector-item-icon">*/
+/* 												<span>¿</span>*/
+/* 											</div>*/
+/* 											<div class="airportselector-item-text">*/
+/* 												<span class="airportselector-item-text-match">Dus</span>seldorf&nbsp;-&nbsp;<span class="airportselector-item-text-italic">Alle Flughäfen</span>*/
+/* 												<div class="airportselector-item-region">Deutschland</div>*/
+/* 											</div>*/
+/* 											<div class="airportselector-item-iata-wrapper">*/
+/* 												<span class="airportselector-item-iata">DUS</span>*/
+/* 											</div>*/
+/* 										</li>*/
+/* 										<li class="airportselector-subitems">*/
+/* 											<ul>*/
+/* 												<li class="airportselector-subitem-wrapper">*/
+/* 													<div class="airportselector-subitem">*/
+/* 														<div class="airportselector-item-icon">*/
+/* 															<span> ( </span>*/
+/* 														</div>*/
+/* 														<div class="airportselector-item-text">Schiphol<span class="airportselector-item-text-rel">&nbsp;-&nbsp;Amsterdam</span>*/
+/* 															<div class="airportselector-item-region">109 km bis Eindhoven</div>*/
+/* 														</div>*/
+/* 														<div class="airportselector-item-iata-wrapper">*/
+/* 															<span class="airportselector-item-iata">AMS</span>*/
+/* 														</div>*/
+/* 													</div>*/
+/* 												</li>*/
+/* 												<li class="airportselector-subitem-wrapper">*/
+/* 													<div class="airportselector-subitem">*/
+/* 														<div class="airportselector-item-icon">*/
+/* 															<span> ( </span>*/
+/* 														</div>*/
+/* 														<div class="airportselector-item-text">Schiphol<span class="airportselector-item-text-rel">&nbsp;-&nbsp;Amsterdam</span>*/
+/* 															<div class="airportselector-item-region">109 km bis Eindhoven</div>*/
+/* 														</div>*/
+/* 														<div class="airportselector-item-iata-wrapper">*/
+/* 															<span class="airportselector-item-iata">AMS</span>*/
+/* 														</div>*/
+/* 													</div>*/
+/* 												</li>*/
+/* 											</ul>*/
+/* 										</li>*/
+/* #}*/
+/* 									</ul>*/
+/* 									<div class="airportselector-bottom">*/
+/* 										<button type="button" class="closeBtn">Schließen</button>*/
+/* 									</div>*/
+/* 								</div>*/
 /* 							</div>*/
 /* 						</div>*/
 /* 						<div class="flightsManager-cell">*/
 /* 							<div class="airportselector-input-wrapper">*/
-/* 								<input class="airportselector-input" type="text" value="" placeholder="Nach" autocomplete="off" spellcheck="false" tabindex="2">*/
+/* 								<input style="" class="airportselector-input" type="text" value="" placeholder="Nach" autocomplete="off" spellcheck="false" tabindex="2" disabled>*/
 /* 							</div>*/
 /* 						</div>*/
 /* 					</div>*/
@@ -185,16 +225,5 @@ class __TwigTemplate_8479298cbc07dea22625aefe85d3a583f8f4794c0506d84acee1d04a29d
 /* */
 /* */
 /* {% block javascripts %}*/
-/* */
-/* <script>*/
-/* 	function aa_onReady()*/
-/* 	{*/
-/* 	    var aaElem = $('#mycorousel');*/
-/*         aaElem.Aa({*/
-/* 			urlimgs: ['123']*/
-/* 		});*/
-/* 	}*/
-/* 	$(document).ready( aa_onReady );*/
-/* </script>*/
-/* */
+/* <script src="{{ asset('bundles/travelsmain/js/lib/require.js') }}" async="" data-main="{{ asset('bundles/travelsmain/js/init') }}"></script>*/
 /* {% endblock javascripts %}*/

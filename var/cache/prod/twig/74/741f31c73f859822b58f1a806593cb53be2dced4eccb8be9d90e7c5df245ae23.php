@@ -19,7 +19,7 @@ class __TwigTemplate_54ebb97d56da8c85ed424d2ab2a8224b0bf77016ec9dd2b3e5eb55f970d
         echo "<header class=\"header\">
     <div class=\"container\">
         <div class=\"row\">
-\t\t\t<p>This is a some header. This is a some header. This is a some header. This is a some header. This is a some header. This is a some header.</p>
+\t\t\t<p>Willkommen! Das ist die Kopfzeile.</p>
         </div>
     </div>
 </header>";
@@ -38,7 +38,7 @@ class __TwigTemplate_54ebb97d56da8c85ed424d2ab2a8224b0bf77016ec9dd2b3e5eb55f970d
 /* <header class="header">*/
 /*     <div class="container">*/
 /*         <div class="row">*/
-/* 			<p>This is a some header. This is a some header. This is a some header. This is a some header. This is a some header. This is a some header.</p>*/
+/* 			<p>Willkommen! Das ist die Kopfzeile.</p>*/
 /*         </div>*/
 /*     </div>*/
 /* </header>*/

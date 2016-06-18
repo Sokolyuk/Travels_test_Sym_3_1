@@ -4,12 +4,18 @@
 
 {% block content %}
 <div class="content-container">
-	<div id="content_bg" class="content-bg">
+	<div id="content_bg_img_container" class="content-bg-img-container">
+		<div id="content_bg_img_1" class="content-bg-img"></div>
+		<div id="content_bg_img_2" class="content-bg-img"></div>
+		<div id="content_bg_img_3" class="content-bg-img"></div>
+	</div>
+	<div id="content_bg_pall" class="content-bg-pall">
 		<div class="flightsManager-content-wraper">
 			<div class="flightsManager-content-h">
 				<div class="flightsManager-content">
 					<div class="flightsManager-content-header">
-						<!-- <div class="flightsManager-service">
+{#
+						<div class="flightsManager-service">
 							<span class="flightsManager-services-icon">ç</span>
 							Flüge
 						</div>
@@ -28,16 +34,18 @@
 						<div class="flightsManager-service">
 							<span class="flightsManager-services-icon">è</span>
 							Hotels
-						</div> -->
+						</div>
+#}
 					</div>
 					<div class="flightsManager-row">
 						<div class="flightsManager-cell">
 							<div class="airportselector-input-wrapper">
 								<input id="departure_airportselector_input" class="airportselector-input" type="text" value="" placeholder="Abreiseort" autocomplete="off" spellcheck="false" tabindex="1">
 							</div>
-							<div class="airportselector-dialog">
+							<div id="airportselector_dialog" class="airportselector-dialog">
 								<div class="airportselector">
-									<ul class="airportselector-items">
+									<ul id="airportselector_items" class="airportselector-items">
+{#
 										<li class="airportselector-item">
 											<div class="airportselector-item-icon">
 												<span>¿</span>
@@ -80,11 +88,10 @@
 												</li>
 											</ul>
 										</li>
-<!-- Next										<li class="airportselector-item">
-										</li> -->
+#}
 									</ul>
 									<div class="airportselector-bottom">
-										<button id="flightsManager_close_button" type="button" class="closeBtn">Schließen</button>
+										<button type="button" class="closeBtn">Schließen</button>
 									</div>
 								</div>
 							</div>

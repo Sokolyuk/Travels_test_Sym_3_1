@@ -23,116 +23,61 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_99cb922e2654f8d64149640709879788a7936154dace10eb0812904727b2df73 = $this->env->getExtension("native_profiler");
-        $__internal_99cb922e2654f8d64149640709879788a7936154dace10eb0812904727b2df73->enter($__internal_99cb922e2654f8d64149640709879788a7936154dace10eb0812904727b2df73_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TravelsMainBundle::index.html.twig"));
+        $__internal_9ddd8b921c98559064ae530548e57ffe0acd3bf128b9d8f2c633903ab9c164b0 = $this->env->getExtension("native_profiler");
+        $__internal_9ddd8b921c98559064ae530548e57ffe0acd3bf128b9d8f2c633903ab9c164b0->enter($__internal_9ddd8b921c98559064ae530548e57ffe0acd3bf128b9d8f2c633903ab9c164b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TravelsMainBundle::index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_99cb922e2654f8d64149640709879788a7936154dace10eb0812904727b2df73->leave($__internal_99cb922e2654f8d64149640709879788a7936154dace10eb0812904727b2df73_prof);
+        $__internal_9ddd8b921c98559064ae530548e57ffe0acd3bf128b9d8f2c633903ab9c164b0->leave($__internal_9ddd8b921c98559064ae530548e57ffe0acd3bf128b9d8f2c633903ab9c164b0_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_0ffca26d5fc60b10513954b33221df90ea2332e47db0e708bfb0b4a1a0d562a6 = $this->env->getExtension("native_profiler");
-        $__internal_0ffca26d5fc60b10513954b33221df90ea2332e47db0e708bfb0b4a1a0d562a6->enter($__internal_0ffca26d5fc60b10513954b33221df90ea2332e47db0e708bfb0b4a1a0d562a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_dfe11f039519057b690a18768248e06e35b38b274efaf011b850961631916bf5 = $this->env->getExtension("native_profiler");
+        $__internal_dfe11f039519057b690a18768248e06e35b38b274efaf011b850961631916bf5->enter($__internal_dfe11f039519057b690a18768248e06e35b38b274efaf011b850961631916bf5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_0ffca26d5fc60b10513954b33221df90ea2332e47db0e708bfb0b4a1a0d562a6->leave($__internal_0ffca26d5fc60b10513954b33221df90ea2332e47db0e708bfb0b4a1a0d562a6_prof);
+        $__internal_dfe11f039519057b690a18768248e06e35b38b274efaf011b850961631916bf5->leave($__internal_dfe11f039519057b690a18768248e06e35b38b274efaf011b850961631916bf5_prof);
 
     }
 
     // line 5
     public function block_content($context, array $blocks = array())
     {
-        $__internal_bcf92c41bd430d5939e95c569bc7995c44b90f6bfbfcbd037dffdadcabe2c59a = $this->env->getExtension("native_profiler");
-        $__internal_bcf92c41bd430d5939e95c569bc7995c44b90f6bfbfcbd037dffdadcabe2c59a->enter($__internal_bcf92c41bd430d5939e95c569bc7995c44b90f6bfbfcbd037dffdadcabe2c59a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_c78c4da3c7f8902d0891556aa80c29b5eda4f297f7a0790d668486919fb4424a = $this->env->getExtension("native_profiler");
+        $__internal_c78c4da3c7f8902d0891556aa80c29b5eda4f297f7a0790d668486919fb4424a->enter($__internal_c78c4da3c7f8902d0891556aa80c29b5eda4f297f7a0790d668486919fb4424a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
         echo "<div class=\"content-container\">
-\t<div id=\"content_bg\" class=\"content-bg\">
+\t<div id=\"content_bg_img_container\" class=\"content-bg-img-container\">
+\t\t<div id=\"content_bg_img_1\" class=\"content-bg-img\"></div>
+\t\t<div id=\"content_bg_img_2\" class=\"content-bg-img\"></div>
+\t\t<div id=\"content_bg_img_3\" class=\"content-bg-img\"></div>
+\t</div>
+\t<div id=\"content_bg_pall\" class=\"content-bg-pall\">
 \t\t<div class=\"flightsManager-content-wraper\">
 \t\t\t<div class=\"flightsManager-content-h\">
 \t\t\t\t<div class=\"flightsManager-content\">
 \t\t\t\t\t<div class=\"flightsManager-content-header\">
-\t\t\t\t\t\t<!-- <div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">ç</span>
-\t\t\t\t\t\t\tFlüge
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">é</span>
-\t\t\t\t\t\t\tFlug + Hotel
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">i</span>
-\t\t\t\t\t\t\tPauschalreisen 
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">V</span>
-\t\t\t\t\t\t\tMietwagen
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"flightsManager-service\">
-\t\t\t\t\t\t\t<span class=\"flightsManager-services-icon\">è</span>
-\t\t\t\t\t\t\tHotels
-\t\t\t\t\t\t</div> -->
-\t\t\t\t\t</div>
+";
+        // line 39
+        echo "\t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"flightsManager-row\">
 \t\t\t\t\t\t<div class=\"flightsManager-cell\">
 \t\t\t\t\t\t\t<div class=\"airportselector-input-wrapper\">
 \t\t\t\t\t\t\t\t<input id=\"departure_airportselector_input\" class=\"airportselector-input\" type=\"text\" value=\"\" placeholder=\"Abreiseort\" autocomplete=\"off\" spellcheck=\"false\" tabindex=\"1\">
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<div class=\"airportselector-dialog\">
+\t\t\t\t\t\t\t<div id=\"airportselector_dialog\" class=\"airportselector-dialog\">
 \t\t\t\t\t\t\t\t<div class=\"airportselector\">
-\t\t\t\t\t\t\t\t\t<ul class=\"airportselector-items\">
-\t\t\t\t\t\t\t\t\t\t<li class=\"airportselector-item\">
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-icon\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span>¿</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-text\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"airportselector-item-text-match\">Dus</span>seldorf&nbsp;-&nbsp;<span class=\"airportselector-item-text-italic\">Alle Flughäfen</span>
-\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-region\">Deutschland</div>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-iata-wrapper\">
-\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"airportselector-item-iata\">DUS</span>
-\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t<li class=\"airportselector-subitems\">
-\t\t\t\t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"airportselector-subitem-wrapper\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-subitem\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-icon\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span> ( </span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-text\">Schiphol<span class=\"airportselector-item-text-rel\">&nbsp;-&nbsp;Amsterdam</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-region\">109 km bis Eindhoven</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-iata-wrapper\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"airportselector-item-iata\">AMS</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"airportselector-subitem-wrapper\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-subitem\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-icon\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span> ( </span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-text\">Schiphol<span class=\"airportselector-item-text-rel\">&nbsp;-&nbsp;Amsterdam</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-region\">109 km bis Eindhoven</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"airportselector-item-iata-wrapper\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"airportselector-item-iata\">AMS</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t\t</li>
-<!-- Next\t\t\t\t\t\t\t\t\t\t<li class=\"airportselector-item\">
-\t\t\t\t\t\t\t\t\t\t</li> -->
-\t\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t\t\t<ul id=\"airportselector_items\" class=\"airportselector-items\">
+";
+        // line 92
+        echo "\t\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t\t<div class=\"airportselector-bottom\">
-\t\t\t\t\t\t\t\t\t\t<button id=\"flightsManager_close_button\" type=\"button\" class=\"closeBtn\">Schließen</button>
+\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"closeBtn\">Schließen</button>
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
@@ -152,17 +97,17 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 </div>
 ";
         
-        $__internal_bcf92c41bd430d5939e95c569bc7995c44b90f6bfbfcbd037dffdadcabe2c59a->leave($__internal_bcf92c41bd430d5939e95c569bc7995c44b90f6bfbfcbd037dffdadcabe2c59a_prof);
+        $__internal_c78c4da3c7f8902d0891556aa80c29b5eda4f297f7a0790d668486919fb4424a->leave($__internal_c78c4da3c7f8902d0891556aa80c29b5eda4f297f7a0790d668486919fb4424a_prof);
 
     }
 
-    // line 108
+    // line 115
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_4d37a9f749746d4c0efd30edbc53d2c68b8947bd83a943f1d7d499ff0584ecb0 = $this->env->getExtension("native_profiler");
-        $__internal_4d37a9f749746d4c0efd30edbc53d2c68b8947bd83a943f1d7d499ff0584ecb0->enter($__internal_4d37a9f749746d4c0efd30edbc53d2c68b8947bd83a943f1d7d499ff0584ecb0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_481dd55440734f24616ad547934d433225be041d6c1ed3efb4db2a39df7c2c50 = $this->env->getExtension("native_profiler");
+        $__internal_481dd55440734f24616ad547934d433225be041d6c1ed3efb4db2a39df7c2c50->enter($__internal_481dd55440734f24616ad547934d433225be041d6c1ed3efb4db2a39df7c2c50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 109
+        // line 116
         echo "<script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/lib/require.js"), "html", null, true);
         echo "\" async=\"\" data-main=\"";
@@ -170,7 +115,7 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
         echo "\"></script>
 ";
         
-        $__internal_4d37a9f749746d4c0efd30edbc53d2c68b8947bd83a943f1d7d499ff0584ecb0->leave($__internal_4d37a9f749746d4c0efd30edbc53d2c68b8947bd83a943f1d7d499ff0584ecb0_prof);
+        $__internal_481dd55440734f24616ad547934d433225be041d6c1ed3efb4db2a39df7c2c50->leave($__internal_481dd55440734f24616ad547934d433225be041d6c1ed3efb4db2a39df7c2c50_prof);
 
     }
 
@@ -186,7 +131,7 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 
     public function getDebugInfo()
     {
-        return array (  166 => 109,  160 => 108,  54 => 6,  48 => 5,  36 => 3,  11 => 1,);
+        return array (  111 => 116,  105 => 115,  78 => 92,  67 => 39,  54 => 6,  48 => 5,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends 'TravelsMainBundle::layout.html.twig' %}*/
@@ -195,12 +140,18 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 /* */
 /* {% block content %}*/
 /* <div class="content-container">*/
-/* 	<div id="content_bg" class="content-bg">*/
+/* 	<div id="content_bg_img_container" class="content-bg-img-container">*/
+/* 		<div id="content_bg_img_1" class="content-bg-img"></div>*/
+/* 		<div id="content_bg_img_2" class="content-bg-img"></div>*/
+/* 		<div id="content_bg_img_3" class="content-bg-img"></div>*/
+/* 	</div>*/
+/* 	<div id="content_bg_pall" class="content-bg-pall">*/
 /* 		<div class="flightsManager-content-wraper">*/
 /* 			<div class="flightsManager-content-h">*/
 /* 				<div class="flightsManager-content">*/
 /* 					<div class="flightsManager-content-header">*/
-/* 						<!-- <div class="flightsManager-service">*/
+/* {#*/
+/* 						<div class="flightsManager-service">*/
 /* 							<span class="flightsManager-services-icon">ç</span>*/
 /* 							Flüge*/
 /* 						</div>*/
@@ -219,16 +170,18 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 /* 						<div class="flightsManager-service">*/
 /* 							<span class="flightsManager-services-icon">è</span>*/
 /* 							Hotels*/
-/* 						</div> -->*/
+/* 						</div>*/
+/* #}*/
 /* 					</div>*/
 /* 					<div class="flightsManager-row">*/
 /* 						<div class="flightsManager-cell">*/
 /* 							<div class="airportselector-input-wrapper">*/
 /* 								<input id="departure_airportselector_input" class="airportselector-input" type="text" value="" placeholder="Abreiseort" autocomplete="off" spellcheck="false" tabindex="1">*/
 /* 							</div>*/
-/* 							<div class="airportselector-dialog">*/
+/* 							<div id="airportselector_dialog" class="airportselector-dialog">*/
 /* 								<div class="airportselector">*/
-/* 									<ul class="airportselector-items">*/
+/* 									<ul id="airportselector_items" class="airportselector-items">*/
+/* {#*/
 /* 										<li class="airportselector-item">*/
 /* 											<div class="airportselector-item-icon">*/
 /* 												<span>¿</span>*/
@@ -271,11 +224,10 @@ class __TwigTemplate_26f40ba1a333715e77beec7ab294d7b22a964e13a138785ae881ef724b9
 /* 												</li>*/
 /* 											</ul>*/
 /* 										</li>*/
-/* <!-- Next										<li class="airportselector-item">*/
-/* 										</li> -->*/
+/* #}*/
 /* 									</ul>*/
 /* 									<div class="airportselector-bottom">*/
-/* 										<button id="flightsManager_close_button" type="button" class="closeBtn">Schließen</button>*/
+/* 										<button type="button" class="closeBtn">Schließen</button>*/
 /* 									</div>*/
 /* 								</div>*/
 /* 							</div>*/

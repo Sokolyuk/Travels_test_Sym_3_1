@@ -42,72 +42,61 @@ class __TwigTemplate_6fe4300afcfa44a19a209f9050fab2859b26d83022f4dc683880d65e0be
         echo "\t<link rel=\"stylesheet\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/css/travels.css"), "html", null, true);
         echo "\" />
-\t<script src=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/jquery-3.0.0.min.js"), "html", null, true);
-        echo "\"></script>
-\t<script src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/jquery-ui.min.js"), "html", null, true);
-        echo "\"></script>
-\t<script src=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/travelsmain/js/travels.js"), "html", null, true);
-        echo "\"></script>
+\t<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Ubuntu:300%7CUbuntu:400%7CUbuntu:500%7CUbuntu:700\"/>
+";
+    }
+
+    // line 11
+    public function block_layout($context, array $blocks = array())
+    {
+        // line 12
+        echo "
+    ";
+        // line 13
+        $this->displayBlock('header', $context, $blocks);
+        // line 16
+        echo "
+    ";
+        // line 17
+        $this->displayBlock('content', $context, $blocks);
+        // line 19
+        echo "
+    ";
+        // line 20
+        $this->displayBlock('footer', $context, $blocks);
+        // line 23
+        echo "
 ";
     }
 
     // line 13
-    public function block_layout($context, array $blocks = array())
-    {
-        // line 14
-        echo "
-    ";
-        // line 15
-        $this->displayBlock('header', $context, $blocks);
-        // line 18
-        echo "
-    ";
-        // line 19
-        $this->displayBlock('content', $context, $blocks);
-        // line 21
-        echo "
-    ";
-        // line 22
-        $this->displayBlock('footer', $context, $blocks);
-        // line 25
-        echo "
-";
-    }
-
-    // line 15
     public function block_header($context, array $blocks = array())
     {
-        // line 16
+        // line 14
         echo "\t\t";
-        $this->loadTemplate("TravelsMainBundle::layout/header.html.twig", "TravelsMainBundle::layout.html.twig", 16)->display($context);
-        // line 17
+        $this->loadTemplate("TravelsMainBundle::layout/header.html.twig", "TravelsMainBundle::layout.html.twig", 14)->display($context);
+        // line 15
         echo "    ";
     }
 
-    // line 19
+    // line 17
     public function block_content($context, array $blocks = array())
     {
-        // line 20
+        // line 18
         echo "    ";
     }
 
-    // line 22
+    // line 20
     public function block_footer($context, array $blocks = array())
     {
-        // line 23
+        // line 21
         echo "        ";
-        $this->loadTemplate("TravelsMainBundle::layout/footer.html.twig", "TravelsMainBundle::layout.html.twig", 23)->display($context);
-        // line 24
+        $this->loadTemplate("TravelsMainBundle::layout/footer.html.twig", "TravelsMainBundle::layout.html.twig", 21)->display($context);
+        // line 22
         echo "    ";
     }
 
-    // line 28
+    // line 26
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -124,7 +113,7 @@ class __TwigTemplate_6fe4300afcfa44a19a209f9050fab2859b26d83022f4dc683880d65e0be
 
     public function getDebugInfo()
     {
-        return array (  111 => 28,  107 => 24,  104 => 23,  101 => 22,  97 => 20,  94 => 19,  90 => 17,  87 => 16,  84 => 15,  79 => 25,  77 => 22,  74 => 21,  72 => 19,  69 => 18,  67 => 15,  64 => 14,  61 => 13,  55 => 10,  51 => 9,  47 => 8,  42 => 7,  39 => 6,  34 => 3,  11 => 1,);
+        return array (  100 => 26,  96 => 22,  93 => 21,  90 => 20,  86 => 18,  83 => 17,  79 => 15,  76 => 14,  73 => 13,  68 => 23,  66 => 20,  63 => 19,  61 => 17,  58 => 16,  56 => 13,  53 => 12,  50 => 11,  42 => 7,  39 => 6,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'TravelsMainBundle::base.html.twig' %}*/
@@ -134,9 +123,7 @@ class __TwigTemplate_6fe4300afcfa44a19a209f9050fab2859b26d83022f4dc683880d65e0be
 /* */
 /* {% block stylesheets %}*/
 /* 	<link rel="stylesheet" href="{{ asset('bundles/travelsmain/css/travels.css') }}" />*/
-/* 	<script src="{{ asset('bundles/travelsmain/js/jquery-3.0.0.min.js') }}"></script>*/
-/* 	<script src="{{ asset('bundles/travelsmain/js/jquery-ui.min.js') }}"></script>*/
-/* 	<script src="{{ asset('bundles/travelsmain/js/travels.js') }}"></script>*/
+/* 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300%7CUbuntu:400%7CUbuntu:500%7CUbuntu:700"/>*/
 /* {% endblock stylesheets %}*/
 /* */
 /* {% block layout %}*/

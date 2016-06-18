@@ -18,8 +18,7 @@ class __TwigTemplate_0c9f56db7a1b7beeb02e088a953836ce1998e3719c67d1a79cbbb2ad652
         // line 1
         echo "<footer class=\"footer\">
     <div class=\"container\">
-        <p>This is a some footer. This is a some footer. This is a some footer.</p>
-\t\t<p>This is a some footer. This is a some footer.</p>
+        <p>This is a some footer.</p>
     </div>
 </footer><!-- .footer -->
 ";
@@ -37,8 +36,7 @@ class __TwigTemplate_0c9f56db7a1b7beeb02e088a953836ce1998e3719c67d1a79cbbb2ad652
 }
 /* <footer class="footer">*/
 /*     <div class="container">*/
-/*         <p>This is a some footer. This is a some footer. This is a some footer.</p>*/
-/* 		<p>This is a some footer. This is a some footer.</p>*/
+/*         <p>This is a some footer.</p>*/
 /*     </div>*/
 /* </footer><!-- .footer -->*/
 /* */
